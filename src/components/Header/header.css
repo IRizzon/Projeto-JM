@@ -1,0 +1,84 @@
+
+.headerbar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #006400;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.headerbar div{
+    background: url('../../assets/background.jpg');
+    background-color: #006400;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.headerbar div{
+    padding-top: 30px;
+}
+
+.headerbar div img{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    -webkit-filter: drop-shadow(2px 2px 6px #BDECB6);
+    filter: drop-shadow(2px 2px 6px #BDECB6);
+    object-fit: cover;
+}
+
+.headerbar a{
+    display: block;
+    color: #BDECB6;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in-out .3s;
+}
+
+.headerbar a svg{
+    margin-right: .5em
+}
+
+.headerbar a:hover{
+    background-color: #002200;
+    color:#BDECB6
+}
+
+@media screen and (max-width:700px){
+    .headerbar{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .headerbar a{
+        float: left;
+    }
+
+    .headerbar div{
+        display: none;
+    }
+
+    .headerbar a svg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .headerbar a{
+        text-align: center;
+        float: none;
+    }
+    
+    .headerbar a svg{
+        display: none;
+    }
+}

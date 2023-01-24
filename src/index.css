@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: 0;
+}
+
+html, body, #root{
+    height: 100%;
+}
+
+body{
+    font: 14px Times, sans-serif;
+    background-image: linear-gradient(
+        to top, rgb(240, 255, 205), rgb(138, 194, 49)
+    );
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
