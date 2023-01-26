@@ -40,7 +40,7 @@ export default function AuthProvider ({ children }){
                 uid: uid,
                 nome: userProfile.data().nome,
                 avatarUrl: userProfile.data().avatarUrl,
-                email: value.user.emailVerified
+                email: value.user.email
             };
 
             setUser(data);
@@ -109,7 +109,9 @@ export default function AuthProvider ({ children }){
             signUp, 
             signOut,
             signIn,
-            loadingAuth
+            loadingAuth,
+            setUser,
+            storageUser
             }}>
             {children}
         </AuthContext.Provider>

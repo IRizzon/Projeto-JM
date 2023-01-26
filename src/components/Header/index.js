@@ -19,7 +19,7 @@ export default function Header(){
                 <FiHome color='#BDECB6' size={24} />
                 Home
             </Link>
-            <Link to='/dashboard'>
+            <Link to='/profile'>
                 <FiUser color='#BDECB6' size={24} />
                 Perfil
             </Link>

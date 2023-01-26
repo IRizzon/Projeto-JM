@@ -52,11 +52,20 @@
     color:#BDECB6
 }
 
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
 @media screen and (max-width:700px){
     .headerbar{
         width: 100%;
         height: auto;
         position: relative;
+    }
+
+    div.content{
+        margin-left: 0;
     }
     
     .headerbar a{
