@@ -4,7 +4,7 @@ import './header.css';
 import { AuthContext } from '../../contexts/auth';
 import avatar from '../../assets/avatar.png'
 import { Link } from 'react-router-dom';
-import { FiHome, FiUser, FiSettings } from 'react-icons/fi'
+import { FiHome, FiUser, FiMap} from 'react-icons/fi'
 
 export default function Header(){
     const { user } = useContext(AuthContext);
@@ -23,9 +23,9 @@ export default function Header(){
                 <FiUser color='#BDECB6' size={24} />
                 Perfil
             </Link>
-            <Link to='/dashboard'>
-                <FiSettings color='#BDECB6' size={24} />
-                Configuração
+            <Link to='/farms'>
+                <FiMap color='#BDECB6' size={24} />
+                Fazendas
             </Link>
         </div>
     )
